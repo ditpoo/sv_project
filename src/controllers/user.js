@@ -33,6 +33,21 @@ async function create(req, res) {
     }
 }
 
+async function find(req, res) {
+    const { 
+        first_name, 
+        last_name, 
+        phone_number } = req.body;
+
+
+    if (first_name || last_name || phone_number) {
+        const user = await UserRepo.find(first_name, last_name, phone_number);
+    } else {
+        res.status(404).send({ "msg": "Missing fields"});
+    }
+}
+
 module.exports = {
     create,
+    find
 }
