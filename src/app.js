@@ -15,6 +15,6 @@ app.use(express.urlencoded({ limit: '5mb', extended: true, parameterLimit: 50000
 app.use('/v1', routesV1);
 
 // catch 404 and forward to error handler
-app.use((req, res, next) => next(new Error("Not Found")));
+// app.use((req, res, next) => next(new Error("Not Found")));
 
 module.exports = app;

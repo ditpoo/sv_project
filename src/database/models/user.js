@@ -12,6 +12,6 @@ const schema = new Schema(
     { timestamps: { createdAt: true, updatedAt: true } },
 );
 
-const UsersModel = model('User', schema);
+const User = model("User", schema);
 
-module.exports = UsersModel;
+module.exports = User;
