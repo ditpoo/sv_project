@@ -1,6 +1,6 @@
 const UsersModel = require("../models/user");
 
-class UsersRepo {
+class UserRepo {
     static async create(item) {
         return (await UsersModel.create(item)).toObject();
     }

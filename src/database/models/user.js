@@ -2,12 +2,12 @@ const { model, Schema } = require("mongoose");
 
 const schema = new Schema(
     {
-        first_name: string,
-        last_name: string,
-        middle_name: string,
-        email: string,
-        phone_number: string,
-        password: string,
+        first_name: String,
+        last_name: String,
+        middle_name: String,
+        email: String,
+        phone_number: String,
+        password: String,
     },
     { timestamps: { createdAt: true, updatedAt: true } },
 );

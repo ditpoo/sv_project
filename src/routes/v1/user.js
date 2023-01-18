@@ -1,8 +1,9 @@
-const express = ("express");
-const asyncHandler = ("../../utils/asyncHandler");
-const { create,find } = ("../../controllers/user");
+const express = require("express");
+const { Router } = require("express");
+const asyncHandler = require("../../utils/asyncHandler");
+const { create,find } = require("../../controllers/user");
 
-const router = express.Router();
+let router = Router();
 
 router.post("/find", asyncHandler(find));
 router.post("/", asyncHandler(create));

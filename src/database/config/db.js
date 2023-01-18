@@ -1,9 +1,9 @@
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
 const uri = process.env.DB_URI || 'mongodb://localhost:27017/project';
 
 mongoose
-    .connect(uri, options)
+    .connect(uri)
     .then(() => {
         console.log('Mongoose connection done');
     })
