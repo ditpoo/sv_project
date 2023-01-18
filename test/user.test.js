@@ -1,5 +1,5 @@
 const UserRepo = require("../src/database/repository/user");
-
+require("../src/database/config/db");
 
 jest.setTimeout(50000)
 
